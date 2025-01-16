@@ -50,6 +50,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 include device/nintendo/nx/vendor/nx-vendor.mk
 
+# Derp Flags
+DERP_BUILDTYPE=Official
+DERP_VERSION_APPEND_TIME_OF_DAY=true
+EXTRA_UDFPS_ICONS=true
+TARGET_NOT_USES_BLUR=true
+TARGET_USES_PICO_GAPPS=true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     device/nintendo/nx/overlay/common
